@@ -105,7 +105,7 @@ const App = () => {
         <table>
           <thead>
             <tr>
-              {numCols && <th>Subject</th>}
+              {numCols ? <th>Subject</th> : <h1>give fields</h1>}
 
               {Array.from({ length: numCols }, (_, index) => (
                 <th key={index}>Student {index + 1}</th>
